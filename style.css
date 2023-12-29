@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f8f9fa;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.accordion_container {
+  padding: 3rem 0;
+}
+.accordion_container .accordion_main_heading {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.accordion_container .accordion_main_heading h1 {
+  font-size: 44px;
+  text-align: center;
+}
+.accordion_item {
+  max-width: 800px;
+
+  margin: 2rem 0;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  border-top: 4px solid #e67700;
+  overflow: hidden;
+}
+.accordion_item.active .accordion_heading {
+  color: #e67700;
+}
+.chevron {
+  transition: transform 0.3s ease;
+}
+
+.accordion_item.active .chevron {
+  transform: rotate(90deg);
+}
+
+.accordion_heading {
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+}
+.accordion_heading span {
+  font-size: 24px;
+  font-weight: 500;
+}
+.accordion_heading h1 {
+  font-size: 24px;
+  font-weight: 400;
+}
+.accordion_heading i {
+  font-size: 25px;
+  color: #e67700;
+}
+.number {
+  margin-right: 30px;
+}
+.accordion_content {
+  margin: 0 65px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.accordion_content p {
+  margin: 30px 0;
+  color: #212529;
+  line-height: 1.6;
+}
+.accordion_content ul {
+  padding: 0 20px;
+}
+.accordion_content ul li {
+  margin-bottom: 12px;
+  color: #868e96;
+}
